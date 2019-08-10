@@ -1,0 +1,14 @@
+---
+
+verbs:
+  - id: teleport
+    icon: ui/icons/unit_action_icon_teleport.png
+    name: ui_unit_verbs_teleport
+    targetColour: target
+    targetOutlineColour: target_outline
+    targetted: false
+    directTarget: false
+    scriptName: verbs/teleport
+    aiUses: true
+
+...

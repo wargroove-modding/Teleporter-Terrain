@@ -1,0 +1,21 @@
+---
+
+terrains:
+  - id: teleporter
+    name: terrain_name_teleporter
+    defenceBonus: -1
+    movementCost:
+      walking: 1
+      riding: 1
+      flying: 1
+      hovering: 1
+      wheels: 1
+      amphibious: 2
+      land_building: 1
+      indoor_building: 1
+    movementGroupType: land
+    placeable: true
+    tilesets:
+      0: teleporter
+
+...

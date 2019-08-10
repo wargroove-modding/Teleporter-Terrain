@@ -1,0 +1,8 @@
+---
+
+id: ActivatedTeleporterMod
+name: "Activated Teleporter"
+description: "Allows units to use the Teleport action when on a specialized terrain space."
+author: kingoftheconnors
+
+...

@@ -1,0 +1,12 @@
+---
+
+# This is the string configuration file for English.
+en-GB:
+  # Terrain space
+  terrain_name_teleporter: Teleporter
+  # Teleport Verb
+  ui_unit_verbs_teleport: Teleport
+
+
+  
+...

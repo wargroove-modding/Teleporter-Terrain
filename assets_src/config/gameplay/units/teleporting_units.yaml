@@ -1,0 +1,145 @@
+---
+
+# This adds pet to the soldier verb list
+modifyingUnitClasses:
+  - id: soldier
+    add:
+      verbs:
+        - teleport
+
+  - id: archer
+    add:
+      verbs:
+        - teleport
+
+  - id: ballista
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_caesar
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_darkmercia
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_elodie
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_emeric
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_greenfinger
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_koji
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_mercia
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_mercival
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_nuru
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_ragna
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_ryota
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_sedge
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_sigrid
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_tenri
+    add:
+      verbs:
+        - teleport
+
+  - id: commander_valder
+    add:
+      verbs:
+        - teleport
+
+  - id: dog
+    add:
+      verbs:
+        - teleport
+
+  - id: drone
+    add:
+      verbs:
+        - teleport
+
+  - id: giant
+    add:
+      verbs:
+        - teleport
+
+  - id: knight
+    add:
+      verbs:
+        - teleport
+
+  - id: mage
+    add:
+      verbs:
+        - teleport
+
+  - id: merman
+    add:
+      verbs:
+        - teleport
+
+  - id: spearman
+    add:
+      verbs:
+        - teleport
+
+  - id: trebuchet
+    add:
+      verbs:
+        - teleport
+
+  - id: villager
+    add:
+      verbs:
+        - teleport
+
+  - id: wagon
+    add:
+      verbs:
+        - teleport
+
+...
