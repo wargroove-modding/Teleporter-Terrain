@@ -16,6 +16,7 @@ terrains:
     movementGroupType: land
     placeable: true
     tilesets:
-      0: teleporter
+      1: teleporter
+      0: plains
 
 ...

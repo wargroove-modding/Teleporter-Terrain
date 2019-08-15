@@ -1,4 +1,4 @@
 ---
 - data:
-    atlas: terrain_mod_ui
+    atlas: ui_SelectTeleporterMod
 ...

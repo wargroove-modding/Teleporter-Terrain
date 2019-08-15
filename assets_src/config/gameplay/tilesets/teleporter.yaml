@@ -10,7 +10,7 @@ tilesets:
         battleBackgroundSpriteSheet: backgrounds/grass_battlescreen_extendedbackgrounds
         battleBackgroundSprite: grass_battlescreen_extendedbackgrounds_plains
         battleBackgroundSpriteForeground: grass_battlescreen_extendedbackgrounds_plains_foreground
-        iconSpriteSheet: terrain_mod_ui
+        iconSpriteSheet: ui_SelectTeleporterMod
         iconSprite: ":img:ui/codex/icons/icon_terrain_flowers_grass.png"
         infoScreenOffset: 80
         fillColour: '#83786e'
@@ -22,7 +22,7 @@ tilesets:
         battleBackgroundSpriteSheet: backgrounds/sand_battlescreen_extendedbackgrounds
         battleBackgroundSprite: sand_battlescreen_extendedbackgrounds_plains
         battleBackgroundSpriteForeground: sand_battlescreen_extendedbackgrounds_plains_foreground
-        iconSpriteSheet: terrain_mod_ui
+        iconSpriteSheet: ui_SelectTeleporterMod
         iconSprite: icon_terrain_flowers_snow
         infoScreenOffset: 80
         fillColour: '#807063'
@@ -34,7 +34,7 @@ tilesets:
         battleBackgroundSpriteSheet: backgrounds/snow_battlescreen_extendedbackgrounds
         battleBackgroundSprite: snow_battlescreen_extendedbackgrounds_plains
         battleBackgroundSpriteForeground: snow_battlescreen_extendedbackgrounds_plains_foreground
-        iconSpriteSheet: terrain_mod_ui
+        iconSpriteSheet: ui_SelectTeleporterMod
         iconSprite: icon_terrain_flowers_sand
         infoScreenOffset: 80
         fillColour: '#596876'
@@ -45,7 +45,7 @@ tilesets:
         portraitSprite: terrain_portraits_city
         battleBackgroundSpriteSheet: backgrounds/snow_battlescreen_extendedbackgrounds
         battleBackgroundSprite: snow_battlescreen_extendedbackgrounds_flagstone
-        iconSpriteSheet: terrain_mod_ui
+        iconSpriteSheet: ui_SelectTeleporterMod
         iconSprite: icon_terrain_flowers
         infoScreenOffset: 80
     primaryConnect: [undefined, teleporter]

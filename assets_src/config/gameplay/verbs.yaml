@@ -6,8 +6,8 @@ verbs:
     name: ui_unit_verbs_teleport
     targetColour: target
     targetOutlineColour: target_outline
-    targetted: false
-    directTarget: false
+    targetted: true
+    directTarget: true
     scriptName: verbs/teleport
     aiUses: true
 
