@@ -7,7 +7,6 @@ verbs:
     targetColour: target
     targetOutlineColour: target_outline
     targetted: true
-    directTarget: true
     scriptName: verbs/teleport
     aiUses: true
 
