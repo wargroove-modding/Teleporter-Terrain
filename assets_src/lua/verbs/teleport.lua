@@ -6,6 +6,14 @@ local Verb = require "wargroove/verb"
 local Teleport = Verb:new()
 
 
+function Teleport:isInRange()
+    return true
+end
+
+function Teleport:getTargetType()
+    return "all"
+end
+
 function Teleport:getFullMapTargets(pos, range, targetType)
     local mapSize = Wargroove.getMapSize()
 
@@ -30,6 +38,10 @@ function Teleport:canExecuteAt(unit, endPos)
 end
 
 function Teleport:canExecuteWithTarget(unit, endPos, targetPos, strParam)
+    if not self:canSeeTarget(targetPos) then
+        return false
+    end
+
     local u = Wargroove.getUnitAt(targetPos)
     local fromTerrainName = Wargroove.getTerrainNameAt(endPos)
     local toTerrainName = Wargroove.getTerrainNameAt(targetPos)
@@ -38,21 +50,14 @@ end
 
 function Teleport:execute(unit, targetPos, strParam, path)
 
-    print("From", unit.pos.x, unit.pos.y)
-    print("Going to", targetPos.x, targetPos.y)
-
     Wargroove.spawnPaletteSwappedMapAnimation(unit.pos, 0, "fx/groove/nuru_groove_fx", unit.playerId)
     Wargroove.playMapSound("cutscene/teleportOut", targetPos)
 
-    -- Somehow make unit disappear
-    unit.inTransport = true
-    Wargroove.updateUnit(unit)
+    Wargroove.waitTime(0.1)
+    
+    Wargroove.setVisibleOverride(unit.id, false)
 
-    Wargroove.waitTime(1)
-
-    -- Somehow make unit reappear
-    unit.inTransport = false
-    Wargroove.updateUnit(unit)
+    Wargroove.waitTime(0.9)
     
     Wargroove.spawnPaletteSwappedMapAnimation(targetPos, 0, "fx/groove/nuru_groove_fx", unit.playerId)
     Wargroove.playMapSound("cutscene/teleportIn", targetPos)
@@ -63,6 +68,39 @@ end
 
 function Teleport:onPostUpdateUnit(unit, targetPos, strParam, path)
     unit.pos = { x = targetPos.x, y = targetPos.y }
+    Wargroove.setVisibleOverride(unit.id, true)
+end
+
+function Teleport:generateOrders(unitId, canMove)
+    local orders = {}
+
+    local unit = Wargroove.getUnitById(unitId)
+    local unitClass = Wargroove.getUnitClass(unit.unitClassId)
+    local movePositions = {}
+    if canMove then
+        movePositions = Wargroove.getTargetsInRange(unit.pos, unitClass.moveRange, "empty")
+    end
+    table.insert(movePositions, unit.pos)
+
+    for _, pos in pairs(movePositions) do
+        if self:canExecuteAt(unit, pos) then
+            local targets = self:getTargets(unit, pos, "")
+            for _, targetPos in ipairs(targets) do
+                orders[#orders+1] = { targetPosition = targetPos, strParam = "", movePosition = pos, endPosition = pos }
+            end
+        end
+    end
+
+    return orders
+end
+
+function Teleport:getScore(unitId, order)
+    local unit = Wargroove.getUnitById(unitId)
+
+    -- Calculate score of just BEING on the targetPos, because that's all it is
+    local move_score = Wargroove.getAILocationScore(unit.unitClassId, order.targetPosition)
+
+    return { score = move_score }
 end
 
 return Teleport
