@@ -1,7 +1,7 @@
 ---
 
-id: SelectTeleporterMod
-name: "Activated Teleporter"
+id: TeleporterMod
+name: "Teleport-to-Teleporter"
 description: "Allows units to use the Teleport action when on a specialized terrain space and select which of the other teleporter spaces on the map they would like to teleport to."
 author: kingoftheconnors
 

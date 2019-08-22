@@ -11,7 +11,7 @@ function Teleport:isInRange()
 end
 
 function Teleport:getTargetType()
-    return "all"
+    return "empty"
 end
 
 function Teleport:getFullMapTargets(pos, range, targetType)

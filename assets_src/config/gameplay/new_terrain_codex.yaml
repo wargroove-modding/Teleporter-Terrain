@@ -1,0 +1,77 @@
+---
+
+codex:
+
+- id: terrain_teleporter_grass
+  category: terrain
+  name: terrain_name_teleporter
+  biome: grass
+  icon:
+    image: ui/codex/icons/icon_terrain_teleporter.png
+  pages:
+  - pageType: description
+    layoutType: image
+    image: ui/codex/content/background_road_grass.png # Change to teleporter grass graphic
+    title: terrain_name_teleporter
+    text: codex_terrain_teleporter_grass_description_text
+  - pageType: strategy
+    layoutType: image
+    image: ui/codex/content/background_road_grass.png # Change to teleporter grass graphic
+    title: terrain_name_teleporter
+    text: codex_terrain_teleporter_strategy_text
+  - pageType: terrain_stats
+    layoutType: image
+    image: ui/codex/content/background_road_grass.png # Change to teleporter grass graphic
+    title: terrain_name_teleporter
+    text: codex_terrain_teleporter_stats_text
+    terrainType: road
+
+- id: terrain_teleporter_ice
+  category: terrain
+  name: terrain_name_teleporter
+  biome: ice
+  icon:
+    image: ui/codex/icons/icon_terrain_teleporter.png
+  pages:
+  - pageType: description
+    layoutType: image
+    image: ui/codex/content/background_road_ice.png # Change to teleporter ice graphic
+    title: terrain_name_teleporter
+    text: codex_terrain_teleporter_ice_description_text
+  - pageType: strategy
+    layoutType: image
+    image: ui/codex/content/background_road_ice.png # Change to teleporter ice graphic
+    title: terrain_name_teleporter
+    text: codex_terrain_teleporter_strategy_text
+  - pageType: terrain_stats
+    layoutType: image
+    image: ui/codex/content/background_road_ice.png # Change to teleporter ice graphic
+    title: terrain_name_teleporter
+    text: codex_terrain_teleporter_stats_text
+    terrainType: road
+
+- id: terrain_teleporter_desert
+  category: terrain
+  name: terrain_name_teleporter
+  biome: desert
+  icon:
+    image: ui/codex/icons/icon_terrain_teleporter.png
+  pages:
+  - pageType: description
+    layoutType: image
+    image: ui/codex/content/background_road_desert.png # Change to teleporter desert graphic
+    title: terrain_name_teleporter
+    text: codex_terrain_teleporter_desert_description_text
+  - pageType: strategy
+    layoutType: image
+    image: ui/codex/content/background_road_desert.png # Change to teleporter desert graphic
+    title: terrain_name_teleporter
+    text: codex_terrain_teleporter_strategy_text
+  - pageType: terrain_stats
+    layoutType: image
+    image: ui/codex/content/background_road_desert.png # Change to teleporter desert graphic
+    title: terrain_name_teleporter
+    text: codex_terrain_teleporter_stats_text
+    terrainType: road
+
+...

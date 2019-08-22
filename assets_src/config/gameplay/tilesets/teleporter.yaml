@@ -10,7 +10,7 @@ tilesets:
         battleBackgroundSpriteSheet: backgrounds/grass_battlescreen_extendedbackgrounds
         battleBackgroundSprite: grass_battlescreen_extendedbackgrounds_road
         battleBackgroundSpriteForeground: grass_battlescreen_extendedbackgrounds_road_foreground
-        iconSpriteSheet: ui_SelectTeleporterMod
+        iconSpriteSheet: ui_TeleporterMod
         iconSprite: ":img:ui/codex/icons/icon_terrain_teleporter.png"
         infoScreenOffset: 80
         fillColour: '#83786e'
@@ -22,20 +22,20 @@ tilesets:
         battleBackgroundSpriteSheet: backgrounds/sand_battlescreen_extendedbackgrounds
         battleBackgroundSprite: sand_battlescreen_extendedbackgrounds_road
         battleBackgroundSpriteForeground: sand_battlescreen_extendedbackgrounds_road_foreground
-        iconSpriteSheet: ui_SelectTeleporterMod
-        iconSprite: icon_terrain_teleporter
+        iconSpriteSheet: ui_TeleporterMod
+        iconSprite: ":img:ui/codex/icons/icon_terrain_teleporter.png"
         infoScreenOffset: 80
         fillColour: '#807063'
       - types: [ice]
         spriteSheet: terrain_tilesets
         spriteBase: teleporter_tileset
         portraitSpriteSheet: terrain/terrain_portraits
-        portraitSprite: terrain_portraits_snow_city
+        portraitSprite: terrain_portraits_snow_road
         battleBackgroundSpriteSheet: backgrounds/snow_battlescreen_extendedbackgrounds
         battleBackgroundSprite: snow_battlescreen_extendedbackgrounds_road
         battleBackgroundSpriteForeground: snow_battlescreen_extendedbackgrounds_road_foreground
-        iconSpriteSheet: ui_SelectTeleporterMod
-        iconSprite: icon_terrain_teleporter
+        iconSpriteSheet: ui_TeleporterMod
+        iconSprite: ":img:ui/codex/icons/icon_terrain_teleporter.png"
         infoScreenOffset: 80
         fillColour: '#596876'
       - types: [volcano]
@@ -45,7 +45,7 @@ tilesets:
         portraitSprite: terrain_portraits_sand_road
         battleBackgroundSpriteSheet: backgrounds/snow_battlescreen_extendedbackgrounds
         battleBackgroundSprite: snow_battlescreen_extendedbackgrounds_flagstone
-        iconSpriteSheet: ui_SelectTeleporterMod
+        iconSpriteSheet: ui_TeleporterMod
         iconSprite: icon_terrain_teleporter
         infoScreenOffset: 80
     primaryConnect: []

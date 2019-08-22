@@ -3,7 +3,7 @@
 terrains:
   - id: teleporter
     name: terrain_name_teleporter
-    defenceBonus: -1
+    defenceBonus: -3
     movementCost:
       walking: 1
       riding: 1
@@ -16,7 +16,8 @@ terrains:
     movementGroupType: land
     placeable: true
     tilesets:
-      1: teleporter
       0: plains
+      2: road
+      3: teleporter
 
 ...
