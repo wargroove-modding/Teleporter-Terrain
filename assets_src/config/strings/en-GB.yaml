@@ -12,6 +12,7 @@ en-GB:
   codex_terrain_teleporter_ice_description_text: A teleporter built against the snowy wastes. It vibrates with warmth to comfort weary travelers.
   codex_terrain_teleporter_stats_text: Stone teleporters allow easy access to the front lines, but leave units vulnerable.
   codex_terrain_teleporter_strategy_text: Teleporters give strong-but-slow units like ballistas, trebuchets and pikeman immediate access to the front lines. Teleporters do not defend you if you drop into enemy territory, so be careful when warping to teleporters in enemy territory.
+  # Automatically adds description for teleporter when your right-click on the terrain
   terrain_description_teleporter: Teleporters allow easy access to the front lines, but leave units on them vulnerable.
 
 ...

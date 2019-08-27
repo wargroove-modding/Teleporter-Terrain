@@ -1,0 +1,6 @@
+---
+- data:
+    tileWidth: 256
+    tileHeight: 128
+    atlas: background_teleporter
+...
