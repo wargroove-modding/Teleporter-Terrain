@@ -59,17 +59,17 @@ codex:
   pages:
   - pageType: description
     layoutType: image
-    image: backgrounds/teleporter/background_teleporter_desert.png
+    image: ui/codex/content/background_teleporter_desert.png
     title: terrain_name_teleporter
     text: codex_terrain_teleporter_desert_description_text
   - pageType: strategy
     layoutType: image
-    image: backgrounds/teleporter/background_teleporter_desert.png
+    image: ui/codex/content/background_teleporter_desert.png
     title: terrain_name_teleporter
     text: codex_terrain_teleporter_strategy_text
   - pageType: terrain_stats
     layoutType: image
-    image: backgrounds/teleporter/background_teleporter_desert.png
+    image: ui/codex/content/background_teleporter_desert.png
     title: terrain_name_teleporter
     text: codex_terrain_teleporter_stats_text
     terrainType: road
